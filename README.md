@@ -5,7 +5,7 @@ This is an Android Application built using  MVVM with Hilt and ViewModel .
 ## Installation
 Clone this repository and import it into **Android Studio**
 ```
-git clone git@github.com:MrThiago/TfL-Road-Status-API.git
+git clone https://github.com/MrThiago/TfL-Road-Status-API.git
 ```
 
 ## Configuration
