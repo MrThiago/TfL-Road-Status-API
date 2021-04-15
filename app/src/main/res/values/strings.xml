@@ -1,0 +1,11 @@
+<!--
+  ~ Created by Thiago Gouvea 15/4/2021.
+  ~ Copyright (c) 2021. All rights reserved.
+  -->
+
+<resources>
+    <string name="app_name">TFL Valid Road</string>
+    <string name="road_name">Road Name:</string>
+    <string name="status">Road Status:</string>
+    <string name="description">Road Status Description:</string>
+</resources>

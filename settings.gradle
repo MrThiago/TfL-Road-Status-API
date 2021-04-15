@@ -1,0 +1,7 @@
+/*
+ * Created by Thiago Gouvea 15/4/2021.
+ * Copyright (c) 2021. All rights reserved.
+ */
+
+include ':app'
+rootProject.name = "TFL Valid Road"

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Thiago Gouvea 15/4/2021.
+  ~ Copyright (c) 2021. All rights reserved.
+  -->
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    style="@style/CardView.Light"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/displayNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/road_name"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/displayName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            app:layout_constraintBottom_toBottomOf="@+id/displayNameLabel"
+            app:layout_constraintStart_toEndOf="@+id/displayNameLabel"
+            tools:text="A2" />
+
+        <TextView
+            android:id="@+id/statusSeverityLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/status"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/displayNameLabel"
+            app:layout_constraintTop_toBottomOf="@+id/displayNameLabel" />
+
+        <TextView
+            android:id="@+id/statusSeverity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            app:layout_constraintBottom_toBottomOf="@+id/statusSeverityLabel"
+            app:layout_constraintStart_toEndOf="@+id/statusSeverityLabel"
+            tools:text="Good" />
+
+        <TextView
+            android:id="@+id/statusSeverityDescriptionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/description"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/statusSeverityLabel"
+            app:layout_constraintTop_toBottomOf="@+id/statusSeverityLabel" />
+
+        <TextView
+            android:id="@+id/statusSeverityDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:maxLines="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/statusSeverityDescriptionLabel"
+            app:layout_constraintTop_toBottomOf="@+id/statusSeverityDescriptionLabel"
+            tools:text="No Exceptional Delays" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
